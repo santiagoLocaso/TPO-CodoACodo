@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,12 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500;700&family=B612:ital,wght@1,700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500;700&family=B612:ital,wght@1,700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
     <title>Página Principal</title>
 </head>
+
 <body class="light-bg">
     <header>
         <nav>
@@ -24,54 +28,101 @@
     </header>
     <main>
         <section>
-                <div class="img_container">
-                </div>
-                <div class="caption_container">
-                    <h1 caption>Escuela de idiomas</h1>
-                    <p>En... nos destacamos por la calidad de nuestros productos y la excelencia de nuestro servicio. Trabajamos con las mejores marcas del mercado, para brindar tranquilidad y seguridad a nuestros clientes</p>
-                </div>
+            <div class="img_container">
+            </div>
+            <div class="caption_container">
+                <h1 class="caption">Escuela de idiomas</h1>
+                <p class="description">En... nos destacamos por la calidad de nuestros productos y la excelencia de
+                    nuestro servicio.
+                    Trabajamos con las mejores marcas del mercado, para brindar tranquilidad y seguridad a nuestros
+                    clientes</p>
+            </div>
         </section>
-        <section class="initial">
-            <h2>Nuestros productos</h2>
+        <section class="container">
+            <section class="card">
+                <div class="circle">
+                    <img src="../assets/img/uk_flag.png">
+                </div>
+                <div class="content">
+                    <h2 class="card_title">Curso de inglés</h2>
+                    <ul class="card_list">
+                        <li class="card_list_item">Nivel avanzado (C1)</li>
+                        <li class="card_list_item">Cupo de 10 personas</li>
+                        <li class="card_list_item">Modalidad: online</li>
+                    </ul>
+                    <a href="">VER MÁS</a>
+                </div>
+            </section>
+            <section class="card">
+                <div class="circle">
+                    <img src="../assets/img/ita_flag.png">
+                </div>
+                <div class="content">
+                    <h2 class="card_title">Curso de italiano</h2>
+                    <ul class="card_list">
+                        <li class="card_list_item">Nivel intermedio (B1)</li>
+                        <li class="card_list_item">Cupo de 8 personas</li>
+                        <li class="card_list_item">Modalidad: online</li>
+                    </ul>
+                    <a href="">VER MÁS</a>
+                </div>
+            </section>
+            <section class="card">
+                <div class="circle">
+                    <img src="../assets/img/fin_flag.png">
+                </div>
+                <div class="content">
+                    <h2 class="card_title">Curso de finés</h2>
+                    <ul class="card_list">
+                        <li class="card_list_item">Nivel inicial (A1)</li>
+                        <li class="card_list_item">Cupo de 4 personas</li>
+                        <li class="card_list_item">Modalidad: online</li>
+                    </ul>
+                    <a href="">VER MÁS</a>
+                </div>
+            </section>
+        </section>
+        <!-- <section class="initial">
+            <h2 class="sub-title">Nuestros productos</h2>
             <div class="container">
                 <div class="card">
                     <div class="card_img uk"></div>
                     <div class="card_body">
-                      <h3 class="card_title">Curso de inglés</h3>
-                      <ul class="card_list">
-                          <li class="card_list_item">Nivel avanzado (C1)</li>
-                          <li class="card_list_item">Cupo de 10 personas</li>
-                          <li class="card_list_item">Modalidad: online</li>
-                      </ul>
-                      <button href="#" class="card_btn">Más info.</button>
+                        <h3 class="card_title">Curso de inglés</h3>
+                        <ul class="card_list">
+                            <li class="card_list_item">Nivel avanzado (C1)</li>
+                            <li class="card_list_item">Cupo de 10 personas</li>
+                            <li class="card_list_item">Modalidad: online</li>
+                        </ul>
+                        <button href="#" class="card_btn">Más info.</button>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img ita"></div>
                     <div class="card_body">
-                      <h3 class="card_title">Curso de italiano</h3>
-                      <ul class="card_list">
-                          <li class="card_list_item">Nivel intermedio (B1)</li>
-                          <li class="card_list_item">Cupo de 8 personas</li>
-                          <li class="card_list_item">Modalidad: online</li>
-                      </ul>
-                      <button href="#" class="card_btn">Más info.</button>
+                        <h3 class="card_title">Curso de italiano</h3>
+                        <ul class="card_list">
+                            <li class="card_list_item">Nivel intermedio (B1)</li>
+                            <li class="card_list_item">Cupo de 8 personas</li>
+                            <li class="card_list_item">Modalidad: online</li>
+                        </ul>
+                        <button href="#" class="card_btn">Más info.</button>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card_img fin"></div>
                     <div class="card_body">
-                      <h2 class="card_title">Curso de finés</h2>
-                      <ul class="card_list">
-                          <li class="card_list_item">Nivel inicial (A1)</li>
-                          <li class="card_list_item">Cupo de 4 personas</li>
-                          <li class="card_list_item">Modalidad: online</li>
-                      </ul>
-                      <button href="#" class="card_btn">Más info.</button>
+                        <h2 class="card_title">Curso de finés</h2>
+                        <ul class="card_list">
+                            <li class="card_list_item">Nivel inicial (A1)</li>
+                            <li class="card_list_item">Cupo de 4 personas</li>
+                            <li class="card_list_item">Modalidad: online</li>
+                        </ul>
+                        <button href="#" class="card_btn">Más info.</button>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
 
@@ -112,4 +163,5 @@
         </section>
     </footer>
 </body>
+
 </html>
