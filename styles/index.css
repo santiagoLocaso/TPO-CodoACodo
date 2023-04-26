@@ -14,11 +14,16 @@
 } */
 
 header {
-    background-color: #ffff;
+    background-color: #686767;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 25px
 }
-
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    /*Esto centra la navbar con el nombre*/
+}
 header h1 {
     font-family: 'B612', sans-serif;
     font-weight: bold;
@@ -42,8 +47,8 @@ header nav ul li a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: 20px;
-    margin: 5px;
-    color: black;
+    margin: 10px;
+    color: #fff;
 
 }
 
@@ -257,8 +262,71 @@ img {
     transform: scale(1.1);
 } */
 
+/*Aca se trabaja para fines*/
 
+#fines{
+    background-color: #f9f9f9;
+}
+.section_fines{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    justify-content: center;
+    margin: 0 auto;
+    height: 500px;
+    width: 500px;
+    position: absolute; /* Agrega esta propiedad */
+    top: 50%; /* Agrega esta propiedad */
+    left: 50%; /* Agrega esta propiedad */
+    transform: translate(-50%, -50%); /* Agrega esta propiedad */
+    background-image: url(../assets/img/fin_flag.png);
+    background-size: cover;
+    border-radius: 90%;
+}
 
+/*Aca se trabaja Italiano*/
+
+#italiano{
+    background-color: #f9f9f9;
+}
+.section_italiano{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    justify-content: center;
+    margin: 0 auto;
+    height: 500px;
+    width: 500px;
+    position: absolute; /* Agrega esta propiedad */
+    top: 50%; /* Agrega esta propiedad */
+    left: 50%; /* Agrega esta propiedad */
+    transform: translate(-50%, -50%); /* Agrega esta propiedad */
+    background-image: url(../assets/img/ita_flag.png);
+    background-size: cover;
+    border-radius: 90%;
+}
+
+/*Aca se trbaja portugues*/
+
+#portugues{
+    background-color: #f9f9f9;
+}
+.section_portugues{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    justify-content: center;
+    margin: 0 auto;
+    height: 500px;
+    width: 500px;
+    position: absolute; /* Agrega esta propiedad */
+    top: 50%; /* Agrega esta propiedad */
+    left: 50%; /* Agrega esta propiedad */
+    transform: translate(-50%, -50%); /* Agrega esta propiedad */
+    background-image: url(../assets/img/uk_flag.png);
+    background-size: cover;
+    border-radius: 90%;
+}
 
 
 
