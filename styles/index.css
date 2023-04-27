@@ -229,39 +229,6 @@ img {
     margin: 7px 0;
 }
 
-/* .card_img {
-    scale: 0.9;
-    margin-bottom: -15px;
-    vertical-align: middle;
-    height: 300px;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.card_body {
-    flex: 1 1 auto;
-    padding: 1rem;
-}
-
-
-.card_btn {
-    color: #fff;
-    background-color: #269771;
-    padding: 0.65rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    border-radius: 0.5rem;
-    transition: all .5s ease-in-out;
-    cursor: pointer;
-}
-
-.card_btn:hover {
-    background-color: #165f47;
-    transform: scale(1.1);
-} */
-
 /*Aca se trabaja para fines*/
 
 
@@ -295,16 +262,16 @@ img {
     margin: 0 auto;
     height: 500px;
     width: 500px;
-    position: absolute; /* Agrega esta propiedad */
-    top: 50%; /* Agrega esta propiedad */
-    left: 50%; /* Agrega esta propiedad */
-    transform: translate(-50%, -50%); /* Agrega esta propiedad */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     background-image: url(../assets/img/ita_flag.png);
     background-size: cover;
     border-radius: 90%;
 }
 
-/*Aca se trbaja portugues*/
+/*Aca se trabaja portugues*/
 
 #portugues{
     background-color: #f9f9f9;
