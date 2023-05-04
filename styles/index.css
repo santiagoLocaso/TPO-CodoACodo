@@ -18,12 +18,14 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 25px
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     margin: 5px;
     /*Esto centra la navbar con el nombre*/
 }
+
 header h1 {
     font-family: 'B612', sans-serif;
     font-weight: bold;
@@ -264,10 +266,11 @@ img {
 
 /*Aca se trabaja para fines*/
 
-#fines{
+#fines {
     background-color: #f9f9f9;
 }
-.section_fines{
+
+.section_fines {
     display: flex;
     flex-direction: column;
     border: 2px solid red;
@@ -275,10 +278,14 @@ img {
     margin: 0 auto;
     height: 500px;
     width: 500px;
-    position: absolute; /* Agrega esta propiedad */
-    top: 50%; /* Agrega esta propiedad */
-    left: 50%; /* Agrega esta propiedad */
-    transform: translate(-50%, -50%); /* Agrega esta propiedad */
+    position: absolute;
+    /* Agrega esta propiedad */
+    top: 50%;
+    /* Agrega esta propiedad */
+    left: 50%;
+    /* Agrega esta propiedad */
+    transform: translate(-50%, -50%);
+    /* Agrega esta propiedad */
     background-image: url(../assets/img/fin_flag.png);
     background-size: cover;
     border-radius: 90%;
@@ -286,10 +293,11 @@ img {
 
 /*Aca se trabaja Italiano*/
 
-#italiano{
+#italiano {
     background-color: #f9f9f9;
 }
-.section_italiano{
+
+.section_italiano {
     display: flex;
     flex-direction: column;
     border: 2px solid red;
@@ -297,10 +305,14 @@ img {
     margin: 0 auto;
     height: 500px;
     width: 500px;
-    position: absolute; /* Agrega esta propiedad */
-    top: 50%; /* Agrega esta propiedad */
-    left: 50%; /* Agrega esta propiedad */
-    transform: translate(-50%, -50%); /* Agrega esta propiedad */
+    position: absolute;
+    /* Agrega esta propiedad */
+    top: 50%;
+    /* Agrega esta propiedad */
+    left: 50%;
+    /* Agrega esta propiedad */
+    transform: translate(-50%, -50%);
+    /* Agrega esta propiedad */
     background-image: url(../assets/img/ita_flag.png);
     background-size: cover;
     border-radius: 90%;
@@ -308,10 +320,11 @@ img {
 
 /*Aca se trbaja portugues*/
 
-#portugues{
+#portugues {
     background-color: #f9f9f9;
 }
-.section_portugues{
+
+.section_portugues {
     display: flex;
     flex-direction: column;
     border: 2px solid red;
@@ -319,10 +332,14 @@ img {
     margin: 0 auto;
     height: 500px;
     width: 500px;
-    position: absolute; /* Agrega esta propiedad */
-    top: 50%; /* Agrega esta propiedad */
-    left: 50%; /* Agrega esta propiedad */
-    transform: translate(-50%, -50%); /* Agrega esta propiedad */
+    position: absolute;
+    /* Agrega esta propiedad */
+    top: 50%;
+    /* Agrega esta propiedad */
+    left: 50%;
+    /* Agrega esta propiedad */
+    transform: translate(-50%, -50%);
+    /* Agrega esta propiedad */
     background-image: url(../assets/img/uk_flag.png);
     background-size: cover;
     border-radius: 90%;
@@ -438,6 +455,130 @@ footer .social-link:nth-of-type(2) {
 
 footer .social-link:nth-of-type(3) {
     background-image: url(../assets/img/Linkedin.png);
+}
+
+
+/* Sección contacto */
+
+.contact_form {
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #686767;
+    padding-left: 30px;
+}
+
+
+input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffaf00;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffaf00;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+label {
+    display: block;
+    float: center;
+}
+
+
+button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #ffaf00;
+    border-color: #ffaf00;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer;
+}
+
+
+button p {
+    color: #fff;
+}
+
+
+span {
+    color: #ffaf00;
+}
+
+
+.aviso {
+    font-size: 13px;
+    color: #0e0e0e;
+}
+
+
+h1 {
+    font-size: 39px;
+    text-align: letf;
+    padding-bottom: 20px;
+    color: #ffaf00;
+}
+
+
+h3 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e;
+}
+
+
+p {
+    font-size: 14px;
+    color: #0e0e0e;
+}
+
+
+::-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+    color: #a8a8a8;
+}
+
+
+.formulario input:focus {
+    outline: 0;
+    border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus {
+    outline: 0;
+    border: 1px solid #97d848;
 }
 
 @media (max-width: 768px) {
