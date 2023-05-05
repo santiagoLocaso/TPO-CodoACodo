@@ -26,6 +26,10 @@ nav {
     /*Esto centra la navbar con el nombre*/
 }
 
+.index-href{
+    text-decoration: none;
+}
+
 header h1 {
     font-family: 'B612', sans-serif;
     font-weight: bold;
@@ -69,17 +73,22 @@ a:hover {
 }
 
 .img_container {
-    /* background-color: black; */
     height: 600px;
-    background-image: url(../assets/img/world2.jpg);
-    /* opacity: 30%;
-    height: 500px; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     float: left;
     width: 100%;
+}
+
+.img_index{
+    background-image: url(../assets/img/world2.jpg);
+}
+
+.img_nosotros {
+    background-image: url(../assets/img/school.jpg);
+
 }
 
 .caption_container {
@@ -544,6 +553,7 @@ h1 {
     text-align: letf;
     padding-bottom: 20px;
     color: #ffaf00;
+    -webkit-text-stroke: 2px black
 }
 
 
@@ -579,6 +589,12 @@ p {
 .formulario textarea:focus {
     outline: 0;
     border: 1px solid #97d848;
+}
+
+.map_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
