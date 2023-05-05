@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
-    <title>Página de Contacto</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500;700&family=B612:ital,wght@1,700&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+    <title>Página Nosotros</title>
 </head>
 <body>
     <header>
@@ -19,49 +22,39 @@
             </ul>
         </nav>
     </header>
-    <main class="contact_form">
-		<section class="formulario">			
-            <h1>Formulario de contacto</h1>
-            <h3>Dejanos tu consulta y te respondemos a la brevedad</h3>
-            <form action="" id="formulario-tarjeta">										
-                <div>
-                    <label for="nombre" class="colocar_nombre">Nombre
-                        <span class="obligatorio">*</span>
-                    </label>
-                        <input type="text" name="introducir_nombre" id="nombre"  placeholder="Nombre">
-                </div>	
-                <div>
-                    <label for="email" class="colocar_email">Email
-                        <span class="obligatorio">*</span>
-                    </label>
-                        <input type="email" name="introducir_email" id="email"  placeholder="Email">
-                </div>				
-                <div>
-                    <label for="telefone" class="colocar_telefono">Teléfono
-                    </label>
-                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Teléfono">
-                </div>												
-                <div>
-                    <label for="asunto" class="colocar_asunto">Asunto
-                        <span class="obligatorio">*</span>
-                    </label>
-                        <input type="text" name="introducir_asunto" id="asunto"  placeholder="Asunto">
-                </div>						
-                <div>
-                    <label for="mensaje" class="colocar_mensaje">Mensaje
-                        <span class="obligatorio">*</span>
-                    </label>                     
-                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"  placeholder="Comentario..."></textarea> 
-                </div>	  								
-                            
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-
-                <div class="aviso">
-                    <span class="obligatorio"> * </span>los campos son obligatorios.
-                </div>					             
-            </form>
-		</section>	
-	</main>
+    <main>
+        <section>
+            <div class="img_container img_nosotros">
+            </div>
+            <div class="caption_container">
+                <h1 class="caption">LangCen</h1>
+            </div>
+        </section>
+        <section>
+            <div class="map_container">
+                <h2>¿Quiénes somos?</h2>
+                <p>Somos una escula de idiomas con más de 20 años de experiencia. Nuestro personal está compuesto por profesores con títulos academicos nivel universitario o superior.</p>
+            </div>
+        </section>
+        <section>
+            <div class="map_container">
+                <h2>¿Cuáles son nuestros horarios de atención?</h2>
+                <ul>
+                    <li>LUN - 8:00 a 20:00</li>
+                    <li>MAR - 8:00 a 20:00</li>
+                    <li>MIE - 8:00 a 20:00</li>
+                    <li>JUE - 8:00 a 20:00</li>
+                    <li>VIE - 8:00 a 20:00</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="map_container">
+                <h2>¿Dónde nos encontramos?</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26270.378803925727!2d-58.423758882308924!3d-34.60928554721745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaefda95a351%3A0x88dbf09429e0b121!2sBalvanera%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1sen!2sit!4v1683276535859!5m2!1sen!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
     <footer>
         <section class="footer-container">
             <div class="footer-content-container">
@@ -74,7 +67,7 @@
                     <span class="menu-title">menu</span>
                     <a href="index.html" class="menu-item-footer">Inicio</a>
                     <a href="" class="menu-item-footer">Cursos</a>
-                    <a href="" class="menu-item-footer">Carrito</a>
+                    <a href="contacto.html" class="menu-item-footer">Contacto</a>
                 </div>
                 <div class="footer-content-container">
                     <span class="menu-title">legal</span>
@@ -83,6 +76,7 @@
                     <a href="" class="menu-item-footer">Terminos</a>
                 </div>
             </div>
+
             <div class="footer-content-container">
                 <span class="menu-title">Nuestras redes</span>
                 <div class="social-container">
@@ -96,7 +90,5 @@
             <span class="copytight">&copy;2023, CaC</span>
         </section>
     </footer>
-
-    <script src="./js/contacto.js"></script>
 </body>
 </html>
