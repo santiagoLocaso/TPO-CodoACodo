@@ -591,10 +591,57 @@ p {
     border: 1px solid #97d848;
 }
 
-.map_container{
+.nosotros_container{
+    font-family: 'B612', sans-serif;
     width: 100%;
+    border: 2px ridge black;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.question{
+    display: block;
+    color: #ffaf00;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+.presentation{
+    background-color: #3a5a40;
+}
+
+.presentation_text{
+    margin: 20px auto;
+    font-size: large;
+    max-width: 60%;
+    text-align: center;
+}
+
+.schedule{
+    background-color: #606c38;
+}
+
+.location{
+    background-color: #283618;
+}
+
+.timetable{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 50px;
+    list-style: none;
+    border-radius: 5px;
+    background-color: #a3b18a;
+}
+
+.time{
+    padding: 5px;
+}
+
+.map_position{
+    margin: 20px auto;
 }
 
 @media (max-width: 768px) {
