@@ -21,9 +21,9 @@
     </header>
     <main class="contact_form">
 		<section class="formulario">			
-            <h1>Formulario de contacto</h1>
-            <h3>Dejanos tu consulta y te respondemos a la brevedad</h3>
-            <form action="" id="formulario-tarjeta">										
+            <h1 class="form-title">Contactate con nosotros</h1>
+            <h3 class="form-subtitle">Dejanos tu consulta y te respondemos a la brevedad</h3>
+            <form action="" id="formulario">										
                 <div>
                     <label for="nombre" class="colocar_nombre">Nombre
                         <span class="obligatorio">*</span>
@@ -39,7 +39,7 @@
                 <div>
                     <label for="telefone" class="colocar_telefono">Teléfono
                     </label>
-                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Teléfono">
+                        <input type="number" name="introducir_telefono" id="telefono" placeholder="Teléfono">
                 </div>												
                 <div>
                     <label for="asunto" class="colocar_asunto">Asunto
@@ -58,7 +58,11 @@
 
                 <div class="aviso">
                     <span class="obligatorio"> * </span>los campos son obligatorios.
-                </div>					             
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><b>Error:</b> Por favor complete los campos obligatorios. </p>
+                </div>		             
             </form>
 		</section>	
 	</main>
@@ -97,6 +101,7 @@
         </section>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/contacto.js"></script>
 </body>
 </html>
