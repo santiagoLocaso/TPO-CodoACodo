@@ -257,7 +257,7 @@ img {
     flex-direction: row;
     width: 100%;
     height: 5rem;
-    border: 2px solid red;
+
     justify-content: right;
 }
 
@@ -294,13 +294,16 @@ header nav ul li a {
     margin-left: 40%;
     margin-right: 40%;
     margin-top: 10px;
-    margin-bottom: 5px;    
+    margin-bottom: 35px;    
+}
+#main_cursos h2:hover{
+    
 }
 .article_cursos{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
-    border: 2px solid red;
+
     justify-content: center;
     align-items: center;
     margin-top: 10px;
