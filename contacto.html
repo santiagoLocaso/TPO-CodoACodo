@@ -4,9 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>Página de Contacto</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <a href="index.html" class="index-href"><h1>LangCen</h1></a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Cursos">Cursos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact_form">
+		<section class="formulario">			
+            <h1 class="form-title">Contactate con nosotros</h1>
+            <h3 class="form-subtitle">Dejanos tu consulta y te respondemos a la brevedad</h3>
+            <form action="" id="formulario">										
+                <div>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <input type="text" name="introducir_nombre" id="nombre"  placeholder="Nombre">
+                </div>	
+                <div>
+                    <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <input type="email" name="introducir_email" id="email"  placeholder="Email">
+                </div>				
+                <div>
+                    <label for="telefone" class="colocar_telefono">Teléfono
+                    </label>
+                        <input type="number" name="introducir_telefono" id="telefono" placeholder="Teléfono">
+                </div>												
+                <div>
+                    <label for="asunto" class="colocar_asunto">Asunto
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <input type="text" name="introducir_asunto" id="asunto"  placeholder="Asunto">
+                </div>						
+                <div>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>                     
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"  placeholder="Comentario..."></textarea> 
+                </div>	  								
+                            
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                <div class="aviso">
+                    <span class="obligatorio"> * </span>los campos son obligatorios.
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><b>Error:</b> Por favor complete los campos obligatorios. </p>
+                </div>		             
+            </form>
+		</section>	
+	</main>
+    <footer>
+        <section class="footer-container">
+            <div class="footer-content-container">
+                <h1 class="website-logo">LangCen</h1>
+                <span class="footer-info">11-1111-1111</span>
+                <span class="footer-info">email@gmail.com</span>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">menu</span>
+                    <a href="index.html" class="menu-item-footer">Inicio</a>
+                    <a href="" class="menu-item-footer">Cursos</a>
+                    <a href="" class="menu-item-footer">Carrito</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">legal</span>
+                    <a href="" class="menu-item-footer">Nosotros</a>
+                    <a href="" class="menu-item-footer">Ubicacion</a>
+                    <a href="" class="menu-item-footer">Terminos</a>
+                </div>
+            </div>
+            <div class="footer-content-container">
+                <span class="menu-title">Nuestras redes</span>
+                <div class="social-container">
+                    <a href="https://www.facebook.com" class="social-link" target=”_blank”></a>
+                    <a href="https://www.twitter.com" class="social-link" target=”_blank”></a>
+                    <a href="https://www.linkedin.com" class="social-link" target=”_blank”></a>
+                </div>
+            </div>
+        </section>
+        <section class="copyright-container">
+            <span class="copytight">&copy;2023, CaC</span>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/contacto.js"></script>
 </body>
 </html>

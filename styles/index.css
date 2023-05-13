@@ -18,12 +18,18 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 25px
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     margin: 5px;
     /*Esto centra la navbar con el nombre*/
 }
+
+.index-href {
+    text-decoration: none;
+}
+
 header h1 {
     font-family: 'B612', sans-serif;
     font-weight: bold;
@@ -67,17 +73,22 @@ a:hover {
 }
 
 .img_container {
-    /* background-color: black; */
     height: 600px;
-    background-image: url(../assets/img/world2.jpg);
-    /* opacity: 30%;
-    height: 500px; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     float: left;
     width: 100%;
+}
+
+.img_index {
+    background-image: url(../assets/img/world2.jpg);
+}
+
+.img_nosotros {
+    background-image: url(../assets/img/school.jpg);
+
 }
 
 .caption_container {
@@ -106,8 +117,8 @@ a:hover {
     margin: 50px 50px;
 }
 
-/* .card {
-    background-image: linear-gradient(rgb(3, 170, 59), rgb(156, 156, 9));
+.card {
+    /* background-image: linear-gradient(rgb(3, 170, 59), rgb(156, 156, 9)); */
     transition: all .5s ease-in-out;
     border-radius: 0.6rem;
     border-style: ridge;
@@ -128,7 +139,7 @@ a:hover {
 
 .ita {
     background-image: url("../assets/img/ita_flag.png");
-} */
+} 
 
 .container {
     position: relative;
@@ -231,6 +242,7 @@ img {
 
 /*Aca se trabaja para fines*/
 
+<<<<<<< HEAD
 
 
 
@@ -247,14 +259,12 @@ img {
 .article_fines h2{
     justify-self: center;
     align-self: center;
-}
-
-/*Aca se trabaja Italiano*/
-
-#italiano{
+=======
+#fines {
     background-color: #f9f9f9;
 }
-.section_italiano{
+
+.section_fines {
     display: flex;
     flex-direction: column;
     border: 2px solid red;
@@ -262,10 +272,49 @@ img {
     margin: 0 auto;
     height: 500px;
     width: 500px;
+    position: absolute;
+    /* Agrega esta propiedad */
+    top: 50%;
+    /* Agrega esta propiedad */
+    left: 50%;
+    /* Agrega esta propiedad */
+    transform: translate(-50%, -50%);
+    /* Agrega esta propiedad */
+    background-image: url(../assets/img/fin_flag.png);
+    background-size: cover;
+    border-radius: 90%;
+>>>>>>> c28ec5248d1dcdef685b42b1c49c874319b56777
+}
+
+/*Aca se trabaja Italiano*/
+
+#italiano {
+    background-color: #f9f9f9;
+}
+
+.section_italiano {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    justify-content: center;
+    margin: 0 auto;
+    height: 500px;
+    width: 500px;
+<<<<<<< HEAD
     position: absolute; 
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
+=======
+    position: absolute;
+    /* Agrega esta propiedad */
+    top: 50%;
+    /* Agrega esta propiedad */
+    left: 50%;
+    /* Agrega esta propiedad */
+    transform: translate(-50%, -50%);
+    /* Agrega esta propiedad */
+>>>>>>> c28ec5248d1dcdef685b42b1c49c874319b56777
     background-image: url(../assets/img/ita_flag.png);
     background-size: cover;
     border-radius: 90%;
@@ -273,10 +322,11 @@ img {
 
 /*Aca se trabaja portugues*/
 
-#portugues{
+#portugues {
     background-color: #f9f9f9;
 }
-.section_portugues{
+
+.section_portugues {
     display: flex;
     flex-direction: column;
     border: 2px solid red;
@@ -284,11 +334,23 @@ img {
     margin: 0 auto;
     height: 500px;
     width: 500px;
+<<<<<<< HEAD
     position: absolute; 
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     background-image: url(../assets/img/Flag_of_Brazil.svg.webp);
+=======
+    position: absolute;
+    /* Agrega esta propiedad */
+    top: 50%;
+    /* Agrega esta propiedad */
+    left: 50%;
+    /* Agrega esta propiedad */
+    transform: translate(-50%, -50%);
+    /* Agrega esta propiedad */
+    background-image: url(../assets/img/uk_flag.png);
+>>>>>>> c28ec5248d1dcdef685b42b1c49c874319b56777
     background-size: cover;
     border-radius: 90%;
 }
@@ -406,22 +468,193 @@ footer .social-link:nth-of-type(3) {
     background-image: url(../assets/img/Linkedin.png);
 }
 
+
+/* Sección contacto */
+
+.contact_form {
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #686767;
+    padding-left: 30px;
+}
+
+
+input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffaf00;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffaf00;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+label {
+    display: block;
+    float: center;
+}
+
+
+button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #ffaf00;
+    border-color: #ffaf00;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer;
+}
+
+
+button p {
+    color: #fff;
+}
+
+
+span {
+    color: #ffaf00;
+}
+
+
+.aviso {
+    font-size: 15px;
+    color: #0e0e0e;
+    margin-bottom: 10px;
+}
+
+
+.form-title {
+    font-size: 39px;
+    text-align: letf;
+    padding-bottom: 20px;
+    color: #ffaf00;
+}
+
+
+.form-subtitle {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e;
+}
+
+
+p {
+    font-size: 14px;
+    color: #0e0e0e;
+}
+
+
+::-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+    color: #a8a8a8;
+}
+
+
+.formulario input:focus {
+    outline: 0;
+    border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus {
+    outline: 0;
+    border: 1px solid #97d848;
+}
+
+.formulario__mensaje {
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    display: none;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.map_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media (max-width: 768px) {
-    footer {
-        position: relative;
-        top: 2rem;
-        bottom: 0;
-        left: 0;
-        height: fit-content;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: #121212;
-        color: #f9f9f9;
+
+    .caption {
+        padding-bottom: 50px;
     }
 
+    .caption_container {
+        margin-top: 50px;
+    }
+
+    /* header mobile */
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    header nav ul {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        display: block;
+        margin: 10px 0;
+        padding-right: 10px;
+    }
+
+    /* footer mobile */
     .footer-container {
         padding: 2rem;
         flex-direction: column;
@@ -435,32 +668,49 @@ footer .social-link:nth-of-type(3) {
         align-items: center;
     }
 
-    .footer-content-container:nth-of-type(1) {
-        align-items: flex-start;
-    }
-
-    .footer-content-container:nth-of-type(3) {
-        border-bottom: none;
-        padding-bottom: 0;
-    }
-
     .footer-menus {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        border-bottom: 1px solid #2a2a2a;
     }
 
     .footer-menus .footer-content-container:nth-of-type(1) {
         width: 45%;
-        align-items: flex-start;
-        border-bottom: none;
     }
 
     .footer-menus .footer-content-container:nth-of-type(2) {
         width: 45%;
-        align-items: flex-start;
-        border-bottom: none;
+    }
+
+    /* Sección contacto */
+
+    .contact_form {
+        width: 95%;
+    }
+
+    .form-subtitle {
+        font-size: 18px;
+    }
+
+    input {
+        width: 95%;
+    }
+
+
+    textarea {
+        width: 95%;
+    }
+
+
+    label {
+        display: block;
+        float: center;
+    }
+
+
+    button {
+        width: 95%;
+    }
+
+    .formulario__mensaje {
+        line-height: 20px;
     }
 }
