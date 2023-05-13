@@ -117,8 +117,8 @@ a:hover {
     margin: 50px 50px;
 }
 
-/* .card {
-    background-image: linear-gradient(rgb(3, 170, 59), rgb(156, 156, 9));
+.card {
+    /* background-image: linear-gradient(rgb(3, 170, 59), rgb(156, 156, 9)); */
     transition: all .5s ease-in-out;
     border-radius: 0.6rem;
     border-style: ridge;
@@ -139,7 +139,7 @@ a:hover {
 
 .ita {
     background-image: url("../assets/img/ita_flag.png");
-} */
+} 
 
 .container {
     position: relative;
