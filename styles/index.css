@@ -113,12 +113,11 @@ a:hover {
 
 .container {
     display: flex;
-    justify-content: space-evenly;
-    margin: 50px 50px;
+    justify-content: center;
+    margin: 10px 10px;
 }
 
 .card {
-    /* background-image: linear-gradient(rgb(3, 170, 59), rgb(156, 156, 9)); */
     transition: all .5s ease-in-out;
     border-radius: 0.6rem;
     border-style: ridge;
@@ -191,7 +190,7 @@ img {
 }
 
 .container .card .content p {
-    color: #666;
+    color: #670;
     text-align: justify;
     font-size: 15px;
 }
@@ -222,6 +221,18 @@ img {
 .container .card:nth-child(3) .content a {
     background-color: #ffaf00;
 }
+.container .card:nth-child(4) .circle,
+.container .card:nth-child(4) .content a {
+    background-color: #ffaf00;
+}
+.container .card:nth-child(5) .circle,
+.container .card:nth-child(5) .content a {
+    background-color: #ffaf00;
+}
+.container .card:nth-child(6) .circle,
+.container .card:nth-child(6) .content a {
+    background-color: #ffaf00;
+}
 
 .card_title {
     border-top: ridge;
@@ -239,41 +250,105 @@ img {
     padding-left: 1.2rem;
     margin: 7px 0;
 }
-
-/* .card_img {
-    scale: 0.9;
-    margin-bottom: -15px;
-    vertical-align: middle;
-    height: 300px;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.card_body {
-    flex: 1 1 auto;
-    padding: 1rem;
-}
-
-
-.card_btn {
+.langcen a{
+    text-decoration: none;
     color: #fff;
-    background-color: #269771;
-    padding: 0.65rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    border-radius: 0.5rem;
-    transition: all .5s ease-in-out;
-    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+    margin-top: -10px;
+    text-align: left;
+
 }
 
-.card_btn:hover {
-    background-color: #165f47;
-    transform: scale(1.1);
-} */
+.header_cursos{
+    background-color: #70afe2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 4rem;
+    justify-content: right;
+}
+
+header nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: -10px;
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    color: #fff;
+    transition: all .3s ease;
+}
+header nav ul li a:hover{
+    background-color: rgb(166, 226, 241);
+    color: #fff;
+    border-radius: 5px;
+
+}
+#cursos{
+    background-color:#d0def3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#main_cursos h2{
+    display: inline-block;
+    text-align: center;
+    background-color: #83c9f7;
+    border-radius: 25px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 10px;
+    margin-bottom: 35px;    
+}
+
+.article_cursos{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.article_cursos p{
+    font-size: 1rem;
+}
+.article_cursos p a{
+    text-decoration: none;
+    color: #000;
+}
+.article_cursos p a:hover{
+    font-size: 1.2rem;
+    transition: .5s;
+}
 
 /*Aca se trabaja para fines*/
+
+#fines{
+    background-color: #f9f9f9;
+}
+.section_fines{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    border: 2px solid black;
+}
+.article_fines h2{
+    justify-self: center;
+    align-self: center;
+}
 
 #fines {
     background-color: #f9f9f9;
@@ -288,16 +363,13 @@ img {
     height: 500px;
     width: 500px;
     position: absolute;
-    /* Agrega esta propiedad */
     top: 50%;
-    /* Agrega esta propiedad */
     left: 50%;
-    /* Agrega esta propiedad */
     transform: translate(-50%, -50%);
-    /* Agrega esta propiedad */
     background-image: url(../assets/img/fin_flag.png);
     background-size: cover;
     border-radius: 90%;
+
 }
 
 /*Aca se trabaja Italiano*/
@@ -314,20 +386,20 @@ img {
     margin: 0 auto;
     height: 500px;
     width: 500px;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     position: absolute;
-    /* Agrega esta propiedad */
     top: 50%;
-    /* Agrega esta propiedad */
     left: 50%;
-    /* Agrega esta propiedad */
     transform: translate(-50%, -50%);
-    /* Agrega esta propiedad */
     background-image: url(../assets/img/ita_flag.png);
     background-size: cover;
     border-radius: 90%;
 }
 
-/*Aca se trbaja portugues*/
+/*Aca se trabaja portugues*/
 
 #portugues {
     background-color: #f9f9f9;
@@ -341,20 +413,25 @@ img {
     margin: 0 auto;
     height: 500px;
     width: 500px;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-image: url(../assets/img/Flag_of_Brazil.svg.webp);
+
+
     position: absolute;
-    /* Agrega esta propiedad */
+
     top: 50%;
-    /* Agrega esta propiedad */
+
     left: 50%;
-    /* Agrega esta propiedad */
+
     transform: translate(-50%, -50%);
-    /* Agrega esta propiedad */
+
     background-image: url(../assets/img/uk_flag.png);
     background-size: cover;
     border-radius: 90%;
 }
-
-
 
 footer {
     bottom: 0;
