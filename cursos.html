@@ -8,9 +8,39 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body id="cursos">
-    <header class="header_cursos">
-        <nav>
-
+    <header>
+        <a href="index.html" class="index-href"><h1>LangCen</h1></a>
+        <button class="abrir-menu" id="abrir"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="list-item">
+                        <a href="#" class="nav-link">Cursos</a>
+                        <button class="button-cursos" id="arrow-button">
+                            <i class="fa-solid fa-circle-arrow-down" style="color: #ffffff;"></i>
+                        </button> 
+                    <ul class="cursos-ul" id="subMenu-cursos">
+                        <li class="list-inside">
+                            <a href="#basico">Basico</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="#intermedio">Intermedio</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="#avanzado">Avanzado</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="#empresas">Empresas</a>
+                        </li>
+                    </ul>
+    
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+        <!-- <nav class="header_cursos">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#basico">Basico</a>
@@ -19,7 +49,7 @@
                 <li><a href="#empresas">Empresas</a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main id="main_cursos">
         <section id="basico">
@@ -292,6 +322,42 @@
             </section>   
         </section>
     </main>
-    
+    <footer>
+        <section class="footer-container">
+            <div class="footer-content-container">
+                <h1 class="website-logo">LangCen</h1>
+                <span class="footer-info">11-1111-1111</span>
+                <span class="footer-info">email@gmail.com</span>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">menu</span>
+                    <a href="index.html" class="menu-item-footer">Inicio</a>
+                    <a href="" class="menu-item-footer">Cursos</a>
+                    <a href="contacto.html" class="menu-item-footer">Contacto</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">legal</span>
+                    <a href="nosotros.html" class="menu-item-footer">Nosotros</a>
+                    <a href="nosotros.html" class="menu-item-footer">Ubicacion</a>
+                    <a href="" class="menu-item-footer">Terminos</a>
+                </div>
+            </div>
+
+            <div class="footer-content-container">
+                <span class="menu-title">Nuestras redes</span>
+                <div class="social-container">
+                    <a href="https://www.facebook.com" class="social-link" target=”_blank”></a>
+                    <a href="https://www.twitter.com" class="social-link" target=”_blank”></a>
+                    <a href="https://www.linkedin.com" class="social-link" target=”_blank”></a>
+                </div>
+            </div>
+        </section>
+        <section class="copyright-container">
+            <span class="copytight">&copy;2023, CaC</span>
+        </section>
+    </footer>
+    <script src="./js/navbar.js"></script>
+    <script src="https://kit.fontawesome.com/29ed9178bd.js" crossorigin="anonymous"></script>
 </body>
 </html>

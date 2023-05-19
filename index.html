@@ -16,9 +16,11 @@
 
 <body class="light-bg">
     <header>
-        <nav>
-            <a href="index.html" class="index-href"><h1>LangCen</h1></a>
-            <ul>
+        <a href="index.html" class="index-href"><h1>LangCen</h1></a>
+        <button class="abrir-menu" id="abrir"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+            <ul class="nav-list">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="cursos.html">Cursos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -37,6 +39,10 @@
                     Trabajamos con las mejores marcas del mercado, para brindar tranquilidad y seguridad a nuestros
                     clientes</p>
             </div>
+        </section>
+
+        <section id="weather-main" class="pic-ctn">
+
         </section>
        
         <section class="container">
@@ -122,5 +128,8 @@
             <span class="copytight">&copy;2023, CaC</span>
         </section>
     </footer>
+    <script src="./js/weather.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="https://kit.fontawesome.com/29ed9178bd.js" crossorigin="anonymous"></script>
 </body>
 </html>
