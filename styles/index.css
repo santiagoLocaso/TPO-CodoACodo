@@ -12,11 +12,8 @@ header {
 
 .nav {
     display: flex;
-    margin: 5px;
-}
+    margin: -5px;
 
-.index-href {
-    text-decoration: none;
 }
 
 .index-href {
@@ -24,6 +21,9 @@ header {
     font-weight: bold;
     text-align: left;
     font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 5px;
 }
 
 .nav ul {
@@ -174,7 +174,7 @@ a:hover {
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity .5s ease-in-out;
 }
 
 .weather-box:nth-child(2) {
