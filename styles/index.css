@@ -294,8 +294,19 @@ header nav ul li a:hover{
     background-color: rgb(166, 226, 241);
     color: #fff;
     border-radius: 5px;
-
 }
+
+.home{
+    display: inline-block;
+    border: 2px solid red;
+    width: 100px;
+    height: 10px;
+}
+.home h2 a{
+    color: #fff;
+    text-decoration: none;
+}
+
 #cursos{
     background-color:#d0def3;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
