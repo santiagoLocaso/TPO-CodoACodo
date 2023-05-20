@@ -7,7 +7,7 @@
     <title>Cursos</title>
     <link rel="stylesheet" href="./styles/index.css">
 </head>
-<body id="cursos">
+<body>
     <header>
         <a href="index.html" class="index-href"><h1>LangCen</h1></a>
         <button class="abrir-menu" id="abrir"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
@@ -16,22 +16,22 @@
             <ul class="nav-list">
                 <li><a href="index.html">Inicio</a></li>
                 <li class="list-item">
-                        <a href="#" class="nav-link">Cursos</a>
-                        <button class="button-cursos" id="arrow-button">
-                            <i class="fa-solid fa-circle-arrow-down" style="color: #ffffff;"></i>
-                        </button> 
+                        <a href="#" class="nav-link">
+                            Cursos
+                            <i class="fa-solid fa-circle-arrow-down" id="arrow-button" style="color: #ffffff;"></i>
+                        </a>
                     <ul class="cursos-ul" id="subMenu-cursos">
                         <li class="list-inside">
-                            <a href="#basico">Basico</a>
+                            <a class="level" href="#basico">Basico</a>
                         </li>
                         <li class="list-inside">
-                            <a href="#intermedio">Intermedio</a>
+                            <a class="level" href="#intermedio">Intermedio</a>
                         </li>
                         <li class="list-inside">
-                            <a href="#avanzado">Avanzado</a>
+                            <a class="level" href="#avanzado">Avanzado</a>
                         </li>
                         <li class="list-inside">
-                            <a href="#empresas">Empresas</a>
+                            <a class="level" href="#empresas">Empresas</a>
                         </li>
                     </ul>
     
@@ -40,23 +40,11 @@
                 <li><a href="nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
-        <!-- <nav class="header_cursos">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#basico">Basico</a>
-                <li><a href="#intermedio">Intermedio</a>
-                <li><a href="#avanzado">Avanzado</a>
-                <li><a href="#empresas">Empresas</a>
-                </li>
-            </ul>
-        </nav> -->
     </header>
     <main id="main_cursos">
         <section id="basico">
-            <h2>Cursos basicos</h2>
-            <article class="article_cursos">
-                <p>Queres iniciar un nuevo idioma? Aca te presentamos los cursos de nivel basico para que empieces en eso que queres</p>
-            </article>
+            <h2 class="cursos-subtitle">Cursos basicos</h2>
+                <p class="description-cursos">Queres iniciar un nuevo idioma? Aca te presentamos los cursos de nivel basico para que empieces en eso que queres</p>
             <section class="container">
                 <!-- PORTUGUES -->
                 <section class="card">
@@ -135,9 +123,9 @@
                     </section>
             </section>
         <section id="intermedio">
-            <h2>Cursos intermedios</h2>
+            <h2 class="cursos-subtitle">Cursos intermedios</h2>
             <article class="article_cursos">
-                <p>Tenes ganas de reforzar tu nivel de un idioma pero no sabes donde ni como? A continuacion te brindamos nuestros cursos nivel intermedio</p>
+                <p class="description-cursos">Tenes ganas de reforzar tu nivel de un idioma pero no sabes donde ni como? A continuacion te brindamos nuestros cursos nivel intermedio</p>
             </article>
             <section class="container">
                 <!-- PORTUGUES -->
@@ -203,9 +191,9 @@
             </section>
         </section>
         <section id="avanzado">
-            <h2>Cursos avanzados</h2>
+            <h2 class="cursos-subtitle">Cursos avanzados</h2>
             <article class="article_cursos">               
-                <p>¿Buscas llegar al maximo nivel dentro de un idioma? Hacelo con nuestros cursos para avanzados</p>
+                <p class="description-cursos">¿Buscas llegar al maximo nivel dentro de un idioma? Hacelo con nuestros cursos para avanzados</p>
             </article>
             <section class="container">
                 <!-- PORTUGUES -->
@@ -271,9 +259,9 @@
             </section>
         </section>
         <section id="empresas">
-            <h2>Servicios para Empresas</h2>
+            <h2 class="cursos-subtitle">Servicios para Empresas</h2>
             <article class="article_cursos">
-                <p>¿Necesitas capacitacion para tu empresa? ¿Servicio de interpetes? <a href="./contacto.html">Contactanos</a> y te brindamos toda la informacion y asesoria que necesites</p>
+                <p class="description-cursos">¿Necesitas capacitacion para tu empresa? ¿Servicio de interpetes? <a href="./contacto.html">Contactanos</a> y te brindamos toda la informacion y asesoria que necesites</p>
             </article>
             <section class="container">
                 <!-- Chino -->
