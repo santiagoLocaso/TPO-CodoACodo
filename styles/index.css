@@ -6,14 +6,14 @@
 }
 
 header {
-    background-color: #83c9f7;
+    background-color: #686767;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 25px
 }
 
 .nav {
     display: flex;
-    margin: -5px;
+    margin: 5px;
 
 }
 
@@ -146,14 +146,15 @@ a {
 
 .pic-ctn {
     position: relative;
-    width: 100vw;
-    height: 250px;
-    margin-top: 15vh;
+    width: 97%;
+    height: 290px;
     overflow: hidden;
 }
 
 .weather-img {
-    width: 70%;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .pic-ctn>div {
@@ -171,15 +172,14 @@ a {
     width: 15%;
     height: 90%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgba(255, 255, 255, 0.8); */
     padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    /* margin-top: 20px; */
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
     opacity: 0;
     transition: opacity .5s ease-in-out;
 }
@@ -530,7 +530,7 @@ footer .social-link:nth-of-type(3) {
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
-    background-color: #3c85ced5;
+    background-color: #686767;
     padding-left: 30px;
 }
 
@@ -542,7 +542,7 @@ input {
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    border-color: #00eeff;
+    border-color: #686767;
     margin-top: 10px;
     padding-left: 10px;
     margin-bottom: 20px;
@@ -556,7 +556,7 @@ textarea {
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    border-color: #00eeff;
+    border-color: #686767;
     margin-top: 10px;
     padding-left: 10px;
     margin-bottom: 20px;
@@ -578,7 +578,7 @@ label {
     margin-top: 10px;
     text-transform: uppercase;
     background-color: #ffaf00;
-    border-color: #00eeff;
+    border-color: #ffaf00;
     border-style: solid;
     border-radius: 10px;
     width: 420px;
@@ -591,8 +591,8 @@ label {
 }
 
 
-span {
-    color: #000;
+.obligatorio {
+    color: #F66060;
 }
 
 
@@ -725,16 +725,12 @@ p {
 @media (max-width: 768px) {
 
     .caption {
-        font-size: 75px;
-        padding-bottom: 100px;
+        font-size: 60px;
+        padding-bottom: 50px;
     }
 
     .description {
         font-size: 25px;
-    }
-
-    .caption {
-        padding-bottom: 50px;
     }
 
     .caption_container {
@@ -841,9 +837,6 @@ p {
         width: 60%;
     }
 
-
-
-
     /* footer mobile */
     .footer-container {
         padding: 2rem;
@@ -902,5 +895,12 @@ p {
 
     .formulario__mensaje {
         line-height: 20px;
+    }
+
+    /* nosotros */
+
+    .map_position {
+        width: 100%;
+        padding: 10px;
     }
 }

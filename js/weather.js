@@ -1,4 +1,4 @@
-const cities = ['London', 'Venice', 'Buenos Aires', 'New York', 'Berlin', 'Barcelona'];
+const cities = ['London', 'Venice', 'Buenos Aires', 'New York', 'Berlin'];
 const apiKey = '2a24efee8795d3e00ab974f54c8e22cf';
 
 const fetchWeatherData = async (city) => {
