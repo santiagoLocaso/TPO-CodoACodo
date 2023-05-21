@@ -5,7 +5,7 @@
 }
 
 header {
-    background-color: #686767;
+    background-color: #83c9f7;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 25px
 }
@@ -92,6 +92,7 @@ a:hover {
 .list-item:hover .button-cursos {
     background-color: #555;
     color: white;
+    border-radius: 5px;
 }
 
 .cursos-ul .list-inside {
@@ -167,7 +168,8 @@ a:hover {
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
@@ -260,17 +262,7 @@ a:hover {
     transform: scale(1.1);
 }
 
-.uk {
-    background-image: url("../assets/img/uk_flag.png");
-}
 
-.fin {
-    background-image: url("../assets/img/fin_flag.png");
-}
-
-.ita {
-    background-image: url("../assets/img/ita_flag.png");
-}
 
 .container {
     position: relative;
@@ -437,107 +429,9 @@ img {
     transition: .5s;
 }
 
-/*Aca se trabaja para fines*/
-
-#fines {
-    background-color: #f9f9f9;
-}
-
-.section_fines {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    justify-content: center;
-    border: 2px solid black;
-}
-
-.article_fines h2 {
-    justify-self: center;
-    align-self: center;
-}
-
-#fines {
-    background-color: #f9f9f9;
-}
-
-.section_fines {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid red;
-    justify-content: center;
-    margin: 0 auto;
-    height: 500px;
-    width: 500px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url(../assets/img/fin_flag.png);
-    background-size: cover;
-    border-radius: 90%;
-
-}
-
-/*Aca se trabaja Italiano*/
-
-#italiano {
-    background-color: #f9f9f9;
-}
-
-.section_italiano {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid red;
-    justify-content: center;
-    margin: 0 auto;
-    height: 500px;
-    width: 500px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url(../assets/img/ita_flag.png);
-    background-size: cover;
-    border-radius: 90%;
-}
-
-/*Aca se trabaja portugues*/
-
-#portugues {
-    background-color: #f9f9f9;
-}
-
-.section_portugues {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid red;
-    justify-content: center;
-    margin: 0 auto;
-    height: 500px;
-    width: 500px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url(../assets/img/Flag_of_Brazil.svg.webp);
 
 
-    position: absolute;
 
-    top: 50%;
-
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    background-image: url(../assets/img/uk_flag.png);
-    background-size: cover;
-    border-radius: 90%;
-}
 
 footer {
     bottom: 0;
