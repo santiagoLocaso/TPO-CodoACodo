@@ -9,3 +9,12 @@ abrir.addEventListener('click', () => {
 cerrar.addEventListener('click', () => {
     nav.classList.remove('visible');
 });
+
+document.addEventListener("click", (event) => {
+    const clickedElement = event.target;
+
+    if (!clickedElement.matches('.level')) {
+        return;
+    }
+    nav.classList.remove('visible');
+});
