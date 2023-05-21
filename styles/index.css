@@ -96,9 +96,7 @@ a {
 
 .nav a:hover,
 .list-item:hover {
-    background-color: #555;
-    color: white;
-    border-radius: 5px;
+    color: #ffae00;
 }
 
 .cursos-ul .list-inside {
@@ -532,7 +530,7 @@ footer .social-link:nth-of-type(3) {
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
-    background-color: #686767;
+    background-color: #3c85ced5;
     padding-left: 30px;
 }
 
@@ -544,7 +542,7 @@ input {
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    border-color: #ffaf00;
+    border-color: #00eeff;
     margin-top: 10px;
     padding-left: 10px;
     margin-bottom: 20px;
@@ -558,7 +556,7 @@ textarea {
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    border-color: #ffaf00;
+    border-color: #00eeff;
     margin-top: 10px;
     padding-left: 10px;
     margin-bottom: 20px;
@@ -580,7 +578,7 @@ label {
     margin-top: 10px;
     text-transform: uppercase;
     background-color: #ffaf00;
-    border-color: #ffaf00;
+    border-color: #00eeff;
     border-style: solid;
     border-radius: 10px;
     width: 420px;
@@ -594,7 +592,7 @@ label {
 
 
 span {
-    color: #ffaf00;
+    color: #000;
 }
 
 
@@ -665,6 +663,9 @@ p {
 
 .nosotros_container {
     font-family: 'B612', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .map_container {
@@ -672,24 +673,25 @@ p {
     border: 2px ridge black;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .question {
     display: block;
     color: #ffaf00;
     margin-top: 10px;
-    margin-left: 5%;
+    text-align: center;
 }
 
 .presentation {
-    background-color: #3a5a40;
+    background-color: #5a3f3a;
 }
 
 .presentation_text {
-    margin: 20px auto;
     font-size: large;
     max-width: 60%;
     text-align: center;
+    color: #000;
 }
 
 .schedule {
@@ -701,8 +703,9 @@ p {
 }
 
 .timetable {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     width: fit-content;
     margin: 20px auto;
     padding: 50px;
