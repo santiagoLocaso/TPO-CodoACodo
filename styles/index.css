@@ -5,16 +5,16 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-header {
-    background-color: #686767;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 25px
-}
-
 .nav {
     display: flex;
-    margin: 5px;
-
+    align-items: flex-end;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #686767;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 22px;
+    z-index: 1;
 }
 
 .index-href {
@@ -539,7 +539,7 @@ footer .social-link:nth-of-type(3) {
 .contact_form {
     width: 460px;
     height: auto;
-    margin: 80px auto;
+    margin: 100px auto;
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -777,6 +777,7 @@ p {
         padding: 2rem;
         box-shadow: 0 0 0 600vmax rgba(0, 0, 0, .5);
         z-index: 1;
+        
     }
 
     .nav.visible {
