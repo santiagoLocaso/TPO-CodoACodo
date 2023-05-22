@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 header {
@@ -64,6 +64,18 @@ a {
 
 .cerrar-menu {
     display: none;
+}
+.nav article img{
+    width: 90px;
+    height: 80px;
+    border-radius: 30px;
+    margin: -20px;
+    margin-bottom: -20px;
+    margin-left: 10px;   
+}
+
+.nav article img:hover{
+    transform: scale(1.1);
 }
 
 /* nav cursos */
