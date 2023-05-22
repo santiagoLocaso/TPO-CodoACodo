@@ -65,16 +65,21 @@ a {
 .cerrar-menu {
     display: none;
 }
-.nav article img{
+
+.logo-mobile {
+    display: none;
+}
+
+.logo img {
     width: 90px;
     height: 80px;
     border-radius: 30px;
     margin: -20px;
     margin-bottom: -20px;
-    margin-left: 10px;   
+    margin-left: 10px;
 }
 
-.nav article img:hover{
+.logo img:hover {
     transform: scale(1.1);
 }
 
@@ -226,7 +231,7 @@ a {
 }
 
 .img_container {
-    height: 600px;
+    height: 725px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -248,7 +253,7 @@ a {
     width: 90%;
     height: 400px;
     margin-left: 5%;
-    margin-top: 166px;
+    margin-top: 11vw;
     font-weight: bold;
     color: #fff;
     text-align: center;
@@ -259,10 +264,16 @@ a {
     color: #ffaf00;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+    text-align: center;
 }
 
 .description {
     font-size: 30px;
+}
+
+.recomendado {
+    text-align: center;
+    font-size: 35px;
 }
 
 .container {
@@ -419,6 +430,9 @@ img {
     font-size: 1.2rem;
 }
 
+#main_cursos {
+    margin-top: 140px;
+}
 
 
 
@@ -748,9 +762,36 @@ p {
 
     /* header mobile */
 
+    header {
+        background-color: #686767;
+        padding: 20px;
+    }
+
     .nav {
         opacity: 0;
         visibility: hidden;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    .logo-mobile img {
+        width: 90px;
+        height: 80px;
+        border-radius: 30px;
+        margin: -46px;
+        margin-bottom: -10px;
+        margin-left: 10px;
+    }
+
+    .cerrar-menu,
+    .button-cursos {
+        margin-bottom: 15px;
     }
 
     .abrir-menu,
@@ -758,6 +799,7 @@ p {
     .button-cursos {
         display: block;
         margin-left: auto;
+        margin-right: 10px;
         border: 0;
         font-size: 30px;
         background-color: transparent;
@@ -777,7 +819,6 @@ p {
         padding: 2rem;
         box-shadow: 0 0 0 600vmax rgba(0, 0, 0, .5);
         z-index: 1;
-        
     }
 
     .nav.visible {
@@ -837,6 +878,10 @@ p {
         padding: 0 20px 0 20px;
     }
 
+    #main_cursos {
+        margin-top: 0;
+    }
+
     /* weather carousel */
 
     .weather-box {
@@ -845,6 +890,10 @@ p {
 
     .weather-img {
         width: 60%;
+    }
+
+    .pic-ctn {
+        width: 100%;
     }
 
     /* footer mobile */
@@ -881,6 +930,7 @@ p {
 
     .form-subtitle {
         font-size: 18px;
+        padding-right: 15px;
     }
 
     input {
