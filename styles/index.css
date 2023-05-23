@@ -5,7 +5,18 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+header {
+    background-color: #686767;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 25px
+}
+
 .nav {
+    display: flex;
+    margin: 5px;
+}
+
+/* .nav {
     display: flex;
     align-items: flex-end;
     width: 100%;
@@ -15,7 +26,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 22px;
     z-index: 1;
-}
+} */
 
 .index-href {
     font-family: 'B612', sans-serif;
@@ -96,6 +107,12 @@ a {
     margin: 0;
 }
 
+.nav a:hover,
+.list-item:hover {
+    background-color: #555;
+    color: white;
+}
+
 #subMenu-cursos {
     display: none;
     position: absolute;
@@ -111,10 +128,10 @@ a {
     text-align: left;
 }
 
-.nav a:hover,
+/* .nav a:hover,
 .list-item:hover {
     color: #ffae00;
-}
+} */
 
 .cursos-ul .list-inside {
     background-color: #686767;
@@ -126,8 +143,8 @@ a {
     padding-top: 15px;
 }
 
-/* weather carousel */
 
+/* weather carousel API: https://openweathermap.org/api */
 
 .pic-ctn {
     width: 100vw;
@@ -182,6 +199,10 @@ a {
     animation: display 10s infinite;
 }
 
+.temp {
+    font-size: 20px;
+}
+
 .weather-box {
     position: absolute;
     top: 50%;
@@ -189,37 +210,32 @@ a {
     width: 15%;
     height: 90%;
     transform: translate(-50%, -50%);
-    /* background-color: rgba(255, 255, 255, 0.8); */
     padding: 20px;
-    /* margin-top: 20px; */
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
     opacity: 0;
     transition: opacity .5s ease-in-out;
 }
 
 .weather-box:nth-child(2) {
-    animation-delay: 2s;
+    animation-delay: 1.8s;
 }
 
 .weather-box:nth-child(3) {
-    animation-delay: 4s;
+    animation-delay: 3.5s;
 }
 
 .weather-box:nth-child(4) {
-    animation-delay: 6s;
+    animation-delay: 5.5s;
 }
 
 .weather-box:nth-child(5) {
-    animation-delay: 8s;
+    animation-delay: 7.5s;
 }
 
-.weather-box:nth-child(6) {
-    animation-delay: 10s;
-}
+/* index */
 
 .initial {
     color: #f9f9f9;
@@ -276,6 +292,8 @@ a {
     font-size: 35px;
 }
 
+/* cards */
+
 .container {
     display: flex;
     justify-content: center;
@@ -290,8 +308,6 @@ a {
 .card:hover {
     transform: scale(1.1);
 }
-
-
 
 .container {
     position: relative;
@@ -430,12 +446,7 @@ img {
     font-size: 1.2rem;
 }
 
-#main_cursos {
-    margin-top: 140px;
-}
-
-
-
+/* footer */
 
 footer {
     bottom: 0;
@@ -527,26 +538,13 @@ footer .website-logo {
 .social-link {
     height: 100%;
     width: 30px;
-    background-image: url(../assets/img/Facebook.png);
-    background-size: 70%;
-    background-position: center;
-    margin-right: 1rem;
-    background-repeat: no-repeat;
+    margin: 10px;
+    font-size: 30px;
 }
 
 .social-link:hover {
     opacity: 0.7;
 }
-
-footer .social-link:nth-of-type(2) {
-    background-image: url(../assets/img/Twitter.png);
-    width: 59px;
-}
-
-footer .social-link:nth-of-type(3) {
-    background-image: url(../assets/img/Linkedin.png);
-}
-
 
 /* Sección contacto */
 
@@ -688,6 +686,8 @@ p {
     display: block;
 }
 
+/* nosotros */
+
 .nosotros_container {
     font-family: 'B612', sans-serif;
     padding-bottom: 10px;
@@ -745,23 +745,7 @@ p {
     margin: 20px auto;
 }
 
-@media (max-width: 768px) {
-
-    .caption {
-        font-size: 60px;
-        padding-bottom: 50px;
-    }
-
-    .description {
-        font-size: 25px;
-    }
-
-    .caption_container {
-        margin-top: 50px;
-    }
-
-    /* header mobile */
-
+@media (min-width: 768px) and (max-width: 1024px) {
     header {
         background-color: #686767;
         padding: 20px;
@@ -785,7 +769,7 @@ p {
         height: 80px;
         border-radius: 30px;
         margin: -46px;
-        margin-bottom: -10px;
+        margin-bottom: -50px;
         margin-left: 10px;
     }
 
@@ -853,6 +837,163 @@ p {
     .nav a:hover,
     .list-item:hover {
         background-color: transparent;
+    }
+
+    .list-item {
+        padding: 0;
+    }
+
+    .nav-link {
+        text-align: end;
+    }
+
+    .cursos-ul .list-inside {
+        text-align: end;
+        padding: 5px 0;
+        background-color: transparent;
+    }
+
+    .cursos-subtitle {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .description-cursos {
+        padding: 0 20px 0 20px;
+    }
+
+    #main_cursos {
+        margin-top: 0;
+    }
+
+    .weather-box {
+        width: 55%;
+    }
+
+    .weather-img {
+        width: 60%;
+    }
+
+    .pic-ctn {
+        width: 60%;
+        margin-left: 15%;
+    }
+
+    .container .card {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .caption {
+        font-size: 60px;
+        padding-bottom: 50px;
+    }
+
+    .description {
+        font-size: 25px;
+    }
+
+    .caption_container {
+        margin-top: 50px;
+    }
+
+    /* header mobile */
+
+    header {
+        background-color: #686767;
+        padding: 20px;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    .logo-mobile img {
+        width: 90px;
+        height: 80px;
+        border-radius: 30px;
+        margin: -46px;
+        margin-bottom: -50px;
+        margin-left: 10px;
+    }
+
+    .cerrar-menu,
+    .button-cursos {
+        margin-bottom: 15px;
+    }
+
+    .abrir-menu,
+    .cerrar-menu,
+    .button-cursos {
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+        border: 0;
+        font-size: 30px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        /* width: 50%;
+        margin: 5px; */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 600vmax rgba(0, 0, 0, .5);
+        z-index: 1;
+    }
+
+    .nav.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li {
+        margin-bottom: 15px;
+    }
+
+    /* .nav-list li a {
+        font-size: 22px;
+    } */
+
+    .nav ul {
+        align-items: end;
+    }
+
+    .container .card {
+        height: 470px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    /* nav cursos */
+    #subMenu-cursos {
+        position: inherit;
+        /* min-width: 130px; */
     }
 
     .list-item {
@@ -962,5 +1103,9 @@ p {
     .map_position {
         width: 100%;
         padding: 10px;
+    }
+
+    .presentation_text {
+        padding: 0;
     }
 }

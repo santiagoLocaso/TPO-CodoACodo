@@ -20,7 +20,7 @@ const displayWeatherData = async () => {
         weatherBox.innerHTML = `
       <h2>${cityName}</h2>
       <img class="weather-img" src="https://openweathermap.org/img/wn/${icon}.png" alt="">
-      <p>${temp}°C</p>
+      <p class="temp">${temp}°C</p>
     `;
         main.appendChild(weatherBox);
     }
